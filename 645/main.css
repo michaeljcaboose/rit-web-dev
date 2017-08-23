@@ -7,26 +7,43 @@ html, body{
   margin: 0;
 }
 
-@media screen and (max-width: 600px) {
+.page-header{
+    border-bottom: 2px solid #EEEEEE;
+}
+
+
+@media screen and (max-width: 800px) {
   .bubble {
     display: block;
+    width: 280px;
   }
 
-  h2{
-    text-align: center;
+  .bubbles{
+    min-height: 400px;
   }
 }
 
-@media screen and (min-width: 601px){
+@media screen and (min-width: 801px){
+
     .bubble{
       display: inline-block;
+      width: 33%;
     }
+
+    .bubbles{
+      min-height: 300px;
+    }
+
+    .page-header h1, .page-header h2{
+      display: inline-block;
+    }
+
 }
 
 h1{
-  border-bottom: 2px solid #EEEEEE;
   color: orange;
 }
+
 
 h1, h2, footer{
     padding: 10px;
@@ -35,8 +52,11 @@ h1, h2, footer{
 
 .bubble{
   vertical-align: top;
-  width: 280px;
   margin: 20px auto;
+}
+
+.bubbles p{
+  text-align: center;
 }
 
 
@@ -53,6 +73,8 @@ h1, h2, footer{
 
 .bubble-flex{
   border-bottom: none;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .bubble-flex:hover, .bubble-flex:active{
@@ -78,6 +100,8 @@ h1, h2, footer{
     max-height 1s ease 0s;
     max-height: 0px;
 }
+
+
 
 .bubble:active  .bubble-detail,
 .bubble:hover .bubble-detail
