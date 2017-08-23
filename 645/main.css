@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body{
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .bubble {
+    display: block;
+  }
+
+  h2{
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px){
+    .bubble{
+      display: inline-block;
+    }
+}
+
+h1{
+  border-bottom: 2px solid #EEEEEE;
+  color: orange;
+}
+
+h1, h2, footer{
+    padding: 10px;
+}
+
+
+.bubble{
+  vertical-align: top;
+  width: 280px;
+  margin: 20px auto;
+}
+
+
+.bubble-flex > h2, h3{
+  margin: 10px auto;
+  padding: 10px 10px;
+  background-color: #000000;
+  color: #FFFFFF;
+  width: 260px;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  transition: all 1s ease;
+}
+
+.bubble-flex{
+  border-bottom: none;
+}
+
+.bubble-flex:hover, .bubble-flex:active{
+  border-bottom: 2px solid #000000;
+}
+
+.bubble-flex:hover > h3,
+.bubble-flex:active > h3{
+  border-radius: 10px 10px 0px 0px;
+}
+
+.bubble .bubble-detail{
+  visibility: hidden;
+  opacity: 0;
+
+  transition:
+    visibility 0s ease,
+    opacity 0.5s ease 0s,
+    max-height 1s ease 0s;
+  -webkit-transition:
+    visibility 0s ease,
+    opacity 0.5s linear 0s,
+    max-height 1s ease 0s;
+    max-height: 0px;
+}
+
+.bubble:active  .bubble-detail,
+.bubble:hover .bubble-detail
+{
+  visibility: visible;
+  opacity: 1;
+  max-height: 400px;
+}
+
+ul{
+  list-style: none;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+li{
+  border-left: 2px solid orange;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
