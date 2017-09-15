@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+
+/**
+	
+	MEDIA QUERIES
+	 
+**/
+
+@media screen and (max-width: 630px){
+    .content{
+        padding: 25px;
+        text-align: center;
+    }
+    
+    .header{
+	    width:200px;
+	    margin:0 auto;
+	}
+
+    /* 
+	    
+	    MOBILE NAVIGATION 
+	    
+	 */
+    #mobile-nav-opener{
+        display: none;
+    }
+
+    #mobile-nav-opener ~ label{
+        display: block;
+        text-align: center;
+        background-color: #000;
+        padding: 15px 0px;
+        color: #fff;
+    }
+    #mobile-nav-opener ~ label h2{
+        margin: 0px;
+    }
+
+    #mobile-nav-opener ~ .mobile-nav{
+        max-height: 0;
+        transition: max-height .5s;
+        -webkit-transition: max-height .5s;
+        overflow: hidden;
+    }
+
+    #mobile-nav-opener:checked ~ .mobile-nav {
+        max-height:200px;
+    }
+
+    .mobile-nav a{
+        display: block;
+        padding: 10px;
+        text-align: center;
+        background-color:rgb(255, 93, 0);
+        color: #000;
+    }
+
+    .mobile-nav a:first-child{
+        padding-top:15px;
+    }
+    .mobile-nav a:last-child{
+        padding-bottom:15px;
+    }
+}
+
+@media screen and (min-width: 630px){
+    .navigation ul li{
+        display: inline-block;
+    }
+    
+    nav input, nav label{
+	    display: none;
+    }
+    
+    .navigation{
+	    height: 60px;
+    }
+    
+    .navigation nav{
+		margin-top: 20px;
+    }
+    
+    .desktop-nav{
+	    width: 275px;
+	    margin: 0 auto;
+    }
+    
+    .desktop-nav a{
+	    width: 30%;
+	    font-size: 18px;
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    -webkit-transition: color .5s, background-color .5s, text-decoration 1s;
+	    transition: color .5s, background-color .5s, text-decoration 1s;
+	    text-decoration: underline;
+	    border-radius: 0px 0px 5px 5px;
+    }
+    
+    .desktop-nav a:hover{
+	    color: #fff;
+	    background-color: #87080E;
+	    text-decoration: none;
+	    cursor: pointer;
+	    
+    }
+    
+    .content{
+	    width: 615px;
+	    margin: 0 auto;
+    }
+    
+    .desktop--div_ib{
+	    display: inline-block;
+    }
+    
+    .hello{
+	    vertical-align: middle;
+    }
+    
+    .hello h1{
+	    margin-left: 15px;
+    }
+    
+    .div_copy{
+	    text-align:center;
+    }
+
+}
+
+/** 
+	
+	EVERYTHING 
+	
+**/
+
+.header img{
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 150px;
+}
+
+.rit-orange{
+	color: #87080E;
+	font-weight: bold;
+}
+
+a:visited, a{
+	color: #87080E;
+}
