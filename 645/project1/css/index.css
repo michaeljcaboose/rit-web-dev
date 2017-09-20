@@ -104,7 +104,6 @@ html, body{
 	    -webkit-transition: color .5s, background-color .5s, text-decoration 1s;
 	    transition: color .5s, background-color .5s, text-decoration 1s;
 	    text-decoration: underline;
-	    border-radius: 0px 0px 5px 5px;
     }
     
     .desktop-nav a:hover{
