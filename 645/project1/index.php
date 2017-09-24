@@ -3,10 +3,10 @@
     <?php include('php_imports/nav.html'); ?>
     <div class="content">
         <div class="header desktop--div_ib hello">
-            <img src="media/prof_head.jpg" alt="My Headshot"/>
+            <img src="media/hotel_head.jpg" alt="My Headshot"/>
         </div>
         <div class="desktop--div_ib hello">
-	        <h1>Hi, I'm Matthew Panebianco</h1>
+	        <h1>Hi, I'm <span class="rit-orange-head">Matthew Panebianco</span></h1>
 	    </div>
 	    <div class="div_copy">
 	        <p>
