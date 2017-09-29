@@ -33,28 +33,42 @@
 			    	<h3>Paychex Inc.</h3>
 			    	<h4>Marketing Web Developer</h4>
 			    	<ul>
-				    	<li></li>
+				    	<li>Working with a team of Web Developers to maintain and upgrade Paychex.com and Paychex associated web domains</li>
+				    	<li>Migrated our website from .NET to PHP-based Drupal 8</li>
+				    	<li>Regularly testing and reviewing web pages and styles to maintain usability and accessibility</li>
+				    	<li>Replacing Flash-based web applications and pages with .NET equivalents using C#</li>
+				    	<li>Writing Python scripts to automate tasks and web-based testing</li>
 			    	</ul>
 			    </div><!-- Card -->
 			    <div class="card">
 			    	<h3>iCanCode</h3>
 			    	<h4>Tutor</h4>
 			    	<ul>
-				    	<li></li>
+				    	<li>Tutored elementary and middle school students in Front End Web Development markup and languages such as HTML, CSS, and JavaScript</li>
+				    	<li>Taught students how to work with Arduino and create Internet-of-Things projects</li>
+				    	<li>Built and executed lesson plans for group challenges</li>
+				    	
 			    	</ul>
 			    </div><!-- Card -->
 			    <div class="card">
-			    	<h3>Paychex Inc.</h3>
+			    	<h3>Paychex Inc. (Again)</h3>
 			    	<h4>Developer I</h4>
 			    	<ul>
-				    	<li></li>
+				    	<li>Serviced errors and incidents involving several production software packages</li>
+				    	<li>Debugged production database scripts, triggers, and packages written in PL/SQL and .NET</li>
+				    	<li>Worked in correlation with development and production teams to resolve incidents involving bugs and errors on the company's code base</li>
+				    	<li>Wrote unix command line and shell scripts to automate resolutions of code incidents</li>
+				    	<li>Worked with developers on transition from proprietary version control systems to Git and Git-related tools</li>
 			    	</ul>
 			    </div><!-- Card -->
 			    <div class="card">
 			    	<h3>The College at Brockport</h3>
 			    	<h4>Web Developer</h4>
 			    	<ul>
-				    	<li></li>
+				    	<li>Technical support for web services to the college</li>
+				    	<li>Responsible for developing and redesigning content for the school's websites</li>
+				    	<li>Responsible for debugging the live site and it's development counterpart using Adobe Dreamweaver and the OmniUpdate CMS</li>
+				    	
 			    	</ul>
 			    </div><!-- Card -->
 		    </div><!-- Card Section-->
