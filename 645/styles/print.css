@@ -1,0 +1,19 @@
+#links{
+	display: none;
+}
+
+.bubble .bubble-detail{
+	visibility: visible;
+	max-height: inherit;
+	opacity: 1;
+	max-height: 400px;
+}
+
+.bubble{
+      display: inline-block;
+      width: 32%;
+ }
+ 
+ .page-header{
+	 text-align: center;
+ }
