@@ -6,6 +6,7 @@
     <div class="content cards">
 	    <div class="">
 	        <h1>The <span class="rit-orange-head">W's</span> / Resume</h1>
+            <p><a href="https://people.rit.edu/~mp5292/645/project1/media/panebianco_resume.pdf">Click here</a> for a downloadable version</p>
 	    </div><!-- Header Div-->
 	    <div class="copy">
 		    
@@ -34,7 +35,7 @@
 			    <h2><span class="rit-orange-head">Who's</span> Paid Me</h2>
 			    <div class="card">
 			    	<h3>Paychex Inc.</h3>
-			    	<h4>Marketing Web Developer</h4>
+			    	<div class="card-subhead">Marketing Web Developer</div>
 			    	<ul>
 				    	<li>Working with a team of Web Developers to maintain and upgrade Paychex.com and Paychex associated web domains</li>
 				    	<li>Migrated our website from .NET to PHP-based Drupal 8</li>
@@ -45,7 +46,7 @@
 			    </div><!-- Card -->
 			    <div class="card">
 			    	<h3>iCanCode</h3>
-			    	<h4>Tutor</h4>
+			    	<div class="card-subhead">Tutor</div>
 			    	<ul>
 				    	<li>Tutored elementary and middle school students in Front End Web Development markup and languages such as HTML, CSS, and JavaScript</li>
 				    	<li>Taught students how to work with Arduino and create Internet-of-Things projects</li>
@@ -55,7 +56,7 @@
 			    </div><!-- Card -->
 			    <div class="card">
 			    	<h3>Paychex Inc. (Again)</h3>
-			    	<h4>Developer I</h4>
+			    	<div class="card-subhead">Developer I</div>
 			    	<ul>
 				    	<li>Serviced errors and incidents involving several production software packages</li>
 				    	<li>Debugged production database scripts, triggers, and packages written in PL/SQL and .NET</li>
@@ -66,7 +67,7 @@
 			    </div><!-- Card -->
 			    <div class="card">
 			    	<h3>The College at Brockport</h3>
-			    	<h4>Web Developer</h4>
+			    	<div class="card-subhead">Web Developer</div>
 			    	<ul>
 				    	<li>Technical support for web services to the college</li>
 				    	<li>Responsible for developing and redesigning content for the school's websites</li>
@@ -81,14 +82,14 @@
 			    <h2><span class="rit-orange-head">Who</span> I've Paid</h2>
 			    <div class="card">
 			    	<h3>Rochester Institute Of Technology</h3>
-			    	<h4>2018</h4>
+			    	<div class="card-subhead">2018</div>
 			    	<ul>
 				    	<li>Masters of Human-Computer Interaction</li>
 			    	</ul>
 			    </div><!-- Card -->
 			    <div class="card">
 			    	<h3>SUNY Brockport</h3>
-			    	<h4>2015</h4>
+			    	<div class="card-subhead">2015</div>
 			    	<ul>
 				    	<li>Bachelors of Science, Marketing</li>
 				    	<li>Bachelors of Science, Computer Science</li>
