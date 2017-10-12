@@ -1,4 +1,6 @@
 <?php include('php_imports/header.html'); ?>
+<title>Matthew Panebianco</title>
+</head>
 <body>
     <?php include('php_imports/nav.html'); ?>
     <div class="content">

@@ -17,7 +17,7 @@ html, body{
 @media screen and (max-width: 675px){
     .content{
         padding: 25px;
-        text-align: center;
+        text-align: justify;
     }
     
     .header{
@@ -56,19 +56,31 @@ html, body{
         max-height:200px;
     }
 
-    .mobile-nav a{
+    .mobile-nav a, .mobile-nav a:visited{
         display: block;
         padding: 10px;
         text-align: center;
         background-color:#87080E;
         color: #fff;
+        text-decoration: none;
+        -webkit-transition: color 1s, background-color: 1s;
+        transition: color 1s, background-color: 1s;
     }
+    .mobile-nav a:hover{
+	    color: #87080E;
+	    background-color: #fff;
+    }
+    
 
     .mobile-nav a:first-child{
         padding-top:15px;
     }
     .mobile-nav a:last-child{
         padding-bottom:15px;
+    }
+    
+    .mobile-nav-head{
+		font-size: 1.5em;    
     }
     
     
@@ -96,7 +108,7 @@ html, body{
     }
     
     .desktop-nav{
-	    width: 275px;
+	    width: 480px;
 	    margin: 0 auto;
     }
     
@@ -138,7 +150,7 @@ html, body{
     }
     
     .div_copy{
-	    text-align:center;
+	    text-align:justify;
     }
 
 } /* min height 675 */
@@ -239,4 +251,10 @@ h2, h3{
 
 .card h4{
 	margin-left: 20px;
+}
+
+@media print{
+	nav{
+		display: none;
+	}
 }

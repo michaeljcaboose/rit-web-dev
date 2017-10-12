@@ -1,4 +1,6 @@
 <?php include('php_imports/header.html'); ?>
+<title>Resume</title>
+</head>
 <body>
     <?php include('php_imports/nav.html'); ?>
     <div class="content cards">
@@ -17,6 +19,7 @@
 				    	<li>Compatible with Both Mac and Windows</li>
 			    	</ul>
 			    </div><!-- Card -->
+			    <!--
 			    <div class="card">
 			    	<h3>PsyBoard</h3>
 			    	<ul>
