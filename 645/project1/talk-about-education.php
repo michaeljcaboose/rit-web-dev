@@ -3,7 +3,7 @@
     <?php include('php_imports/nav.html'); ?>
     <div class="content">
         <div class="header desktop--div_ib hello">
-            <img src="media/hotel_head.jpg" alt="My Headshot"/>
+            <img src="media/hotel_head_blur-min.png" alt="My Headshot"/>
         </div>
         <div class="desktop--div_ib hello">
 	        <h1>My thoughts on <span class="rit-orange-head">Education</span></h1>
