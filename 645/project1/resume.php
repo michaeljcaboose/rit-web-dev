@@ -9,7 +9,7 @@
             <p><a href="https://people.rit.edu/~mp5292/645/project1/media/panebianco_resume.pdf">Click here</a> for a downloadable version</p>
 	    </div><!-- Header Div-->
 	    <div class="copy">
-		    
+
 		    <div class="card-section">
 			    <h2><span class="rit-orange-head">What</span> I've Done</h2>
 			    <div class="card">
@@ -28,9 +28,9 @@
 			    	</ul>
 			    </div><!-- Card -->
 		    </div><!-- Card Section-->
-		    
-		    
-		    
+
+
+
 		    <div class="card-section">
 			    <h2><span class="rit-orange-head">Who's</span> Paid Me</h2>
 			    <div class="card">
@@ -51,7 +51,7 @@
 				    	<li>Tutored elementary and middle school students in Front End Web Development markup and languages such as HTML, CSS, and JavaScript</li>
 				    	<li>Taught students how to work with Arduino and create Internet-of-Things projects</li>
 				    	<li>Built and executed lesson plans for group challenges</li>
-				    	
+
 			    	</ul>
 			    </div><!-- Card -->
 			    <div class="card">
@@ -72,12 +72,12 @@
 				    	<li>Technical support for web services to the college</li>
 				    	<li>Responsible for developing and redesigning content for the school's websites</li>
 				    	<li>Responsible for debugging the live site and it's development counterpart using Adobe Dreamweaver and the OmniUpdate CMS</li>
-				    	
+
 			    	</ul>
 			    </div><!-- Card -->
 		    </div><!-- Card Section-->
-		    
-		    
+
+
 		    <div class="card-section">
 			    <h2><span class="rit-orange-head">Who</span> I've Paid</h2>
 			    <div class="card">
@@ -95,9 +95,9 @@
 				    	<li>Bachelors of Science, Computer Science</li>
 			    	</ul>
 			    </div><!-- Card -->
-			    
+
 		    </div><!-- Card Section-->
-		    
+
 	    </div><!-- copy -->
     </div><!-- content -->
 </body>
