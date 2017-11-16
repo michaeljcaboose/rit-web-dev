@@ -224,7 +224,18 @@ h2, h3{
 	background-image: url('../media/hockey-goalie-gear.jpg');
 }
 	
-	
+/* GENERAL IMAGES*/
+
+img{
+	width:100%;
+}
+
+figcaption{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 	.gray-cover{
 		z-index: 2;
 		background-color: gray;
