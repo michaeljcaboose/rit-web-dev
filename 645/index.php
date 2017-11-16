@@ -14,7 +14,7 @@
 	        </p>
 	             <span class="rit-orange">Python</span> is my preferred programming language, but I have experience with
 	             <span class="rit-orange">C#</span>,  <span class="rit-orange">PHP</span>, and many others.
-	        <p>Take a look at my <a href="">experience</a> and <a href="">Github</a> repo.
+	        <p>Take a look at my <a href="https://people.rit.edu/~mp5292/645/project1/resume.php">experience</a> and <a href="">Github</a> repo.
 	        </p>
 	    </div>
     </div>
