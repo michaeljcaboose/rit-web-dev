@@ -1,126 +1,268 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
 
 html, body{
-  font-family: 'Roboto', sans-serif;
-  height: 100%;
-  width: 100%;
-  margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
+ 
 
-.page-header{
-    border-bottom: 2px solid #EEEEEE;
-}
+/**
+	
+	MEDIA QUERIES
+	 
+**/
 
+@media screen and (max-width: 675px){
+    .content{
+        padding: 25px;
+        text-align: justify;
+    }
+    
+    .header{
+	    width:250px;
+	    margin:0 auto;
+	}
 
-@media screen and (max-width: 800px) {
-  .bubble {
-    display: block;
-    width: 280px;
-  }
-
-  .bubbles{
-    min-height: 400px;
-  }
-}
-
-@media screen and (min-width: 801px){
-
-    .bubble{
-      display: inline-block;
-      width: 33%;
+    /* 
+	    
+	    MOBILE NAVIGATION 
+	    
+	 */
+    #mobile-nav-opener{
+        display: none;
     }
 
-    .bubbles{
-      min-height: 300px;
+    #mobile-nav-opener ~ label{
+        display: block;
+        text-align: center;
+        background-color: #000;
+        padding: 15px 0px;
+        color: #fff;
+    }
+    #mobile-nav-opener ~ label h2{
+        margin: 0px;
     }
 
-    .page-header h1, .page-header h2{
-      display: inline-block;
+    #mobile-nav-opener ~ .mobile-nav{
+        max-height: 0;
+        transition: max-height .5s;
+        -webkit-transition: max-height .5s;
+        overflow: hidden;
     }
 
+    #mobile-nav-opener:checked ~ .mobile-nav {
+        max-height:200px;
+    }
+
+    .mobile-nav a, .mobile-nav a:visited{
+        display: block;
+        padding: 10px;
+        text-align: center;
+        background-color:#87080E;
+        color: #fff;
+        text-decoration: none;
+        -webkit-transition: color 1s, background-color: 1s;
+        transition: color 1s, background-color: 1s;
+    }
+    .mobile-nav a:hover{
+	    color: #87080E;
+	    background-color: #fff;
+    }
+    
+
+    .mobile-nav a:first-child{
+        padding-top:15px;
+    }
+    .mobile-nav a:last-child{
+        padding-bottom:15px;
+    }
+    
+    .mobile-nav-head{
+		font-size: 1.5em;    
+    }
+    
+    
+    /** CARDS **/
+    .card{
+	    text-align: left;
+    }
+}
+
+@media screen and (min-width: 675px){
+    .navigation ul li{
+        display: inline-block;
+    }
+    
+    nav input, nav label{
+	    display: none;
+    }
+    
+    .navigation{
+	    height: 60px;
+    }
+    
+    .navigation nav{
+		margin-top: 20px;
+    }
+    
+    .desktop-nav{
+	    width: 480px;
+	    margin: 0 auto;
+    }
+    
+    .desktop-nav a{
+	    width: 30%;
+	    font-size: 18px;
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    -webkit-transition: color .5s, background-color .5s, text-decoration 1s;
+	    transition: color .5s, background-color .5s, text-decoration 1s;
+	    text-decoration: underline;
+    }
+    
+    .desktop-nav a:hover{
+	    color: #fff;
+	    background-color: #87080E;
+	    text-decoration: none;
+	    cursor: pointer;
+	    
+    }
+    
+    .content{
+	    width: 660px;
+	    margin: 0 auto;
+    }
+    
+    .desktop--div_ib{
+	    display: inline-block;
+    }
+    
+    .hello{
+	    vertical-align: middle;
+    }
+    
+    .hello h1{
+	    margin-left: 15px;
+    }
+    
+    .div_copy{
+	    text-align:justify;
+    }
+
+} /* min height 675 */
+
+@media screen and (min-width: 950px){
+
+	.content.cards{
+		min-width: 90%;
+	}
+	
+	.card{
+		display: inline-block;
+		width: 47%;
+		vertical-align: top;
+		margin-right: 25px;
+		margin-bottom: 25px;
+	}
+
+}
+
+/** 
+	
+	EVERYTHING 
+	
+**/
+
+.header img{
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 150px;
+}
+
+.rit-orange{
+	color: #87080E;
+	font-weight: bold;
+}
+.rit-orange-head{
+	color: #87080E;
+	font-weight: 300;
+}
+
+a:visited, a{
+	color: #87080E;
 }
 
 h1{
-  color: orange;
+	font-weight: 100;
+}
+
+h2, h3{
+	font-weight: 300;
 }
 
 
-h1, h2, footer{
-    padding: 10px;
+/** CARD SECTION **/
+.card-section h2{
+	border-bottom: solid 1px #87080E;
+	padding-top: 10px;
 }
 
-
-.bubble{
-  vertical-align: top;
-  margin: 20px auto;
+.card-section ul{
+	list-style-type: none;
+	padding-right: 20px; 
+	padding-left: 20px;
+	padding-bottom: 1px;
 }
 
-.bubbles p{
-  text-align: center;
+.card-section{
+	margin-bottom: 50px;
 }
 
-
-.bubble-flex > h2, h3{
-  margin: 10px auto;
-  padding: 10px 10px;
-  background-color: #000000;
-  color: #FFFFFF;
-  width: 260px;
-  text-align: center;
-  border-radius: 10px 10px 10px 10px;
-  transition: all 1s ease;
+.card ul li{
+	margin-top: 13px;
+	margin-bottom: 13px;
+	padding-left: 10px;
+	border-left: 1px solid #87080E;
 }
 
-.bubble-flex{
-  border-bottom: none;
-  width: 280px;
-  margin: 0 auto;
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
-.bubble-flex:hover, .bubble-flex:active{
-  border-bottom: 2px solid #000000;
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.bubble-flex:hover > h3,
-.bubble-flex:active > h3{
-  border-radius: 10px 10px 0px 0px;
+.card h3{
+	background-color: #87080e;
+	color:#fff;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 0px;
 }
 
-.bubble .bubble-detail{
-  visibility: hidden;
-  opacity: 0;
-
-  transition:
-    visibility 0s ease,
-    opacity 0.5s ease 0s,
-    max-height 1s ease 0s;
-  -webkit-transition:
-    visibility 0s ease,
-    opacity 0.5s linear 0s,
-    max-height 1s ease 0s;
-    max-height: 0px;
+.card-subhead{
+    display: inline-block;
+	margin-left: 10px;
+    font-size:1.1em;
+    color: #87080e;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right:15px;
+    margin-top: 0px;
 }
 
-
-
-.bubble:active  .bubble-detail,
-.bubble:hover .bubble-detail
-{
-  visibility: visible;
-  opacity: 1;
-  max-height: 400px;
-}
-
-ul{
-  list-style: none;
-  max-width: 90%;
-  margin: 0 auto;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-li{
-  border-left: 2px solid orange;
-  padding-left: 5px;
-  margin-bottom: 10px;
+@media print{
+	nav{
+		display: none;
+	}
 }

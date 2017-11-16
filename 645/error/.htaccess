@@ -1,0 +1,2 @@
+ErrorDocument 404 /~mp5292/645/error/error.html
+DirectoryIndex noterror.html
