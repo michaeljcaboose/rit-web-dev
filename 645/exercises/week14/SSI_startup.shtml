@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>SSI Demonstration</title>
+</head>
+<body>
+	<h1>Server-side Include Demonstration</h1>
+	<h2>The last time this file was updated was: <!--#flastmod file="SSI_startup.shtml"--></h2>
+	<p><!--#include file="header.shtml" --></p>
+	<hr />
+	<h2>The Current Environment Is: <!--#echo var="HTTP_USER_AGENT"--></h2>
+	<p><!--#include file="footer.shtml"--></p>
+</body>
+</html>

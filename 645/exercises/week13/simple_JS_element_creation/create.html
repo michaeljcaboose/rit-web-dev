@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Simple Element Creation</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <header class="title">
+        <h1>My List</h1>
+        <input id="add" type="button" value="Add Item"/>
+    </header>
+    <section id="myList">
+    </section>
+    <script>
+        "use strict";
+        function init(){
+            console.log('loaded');
+            
+            var myList = document.querySelector("#myList");
+            var ul = document.createElement("ul");
+            myList.appendChild(ul);
+            var addBtn = document.getElementById("add");
+            
+            addBtn.addEventListener("click",function(e){
+                var li = document.createElement("li");
+                li.innerHTML="Item";
+                ul.appendChild(li);
+            });
+        }
+        
+        init();
+    </script>
+</body>
+</html>

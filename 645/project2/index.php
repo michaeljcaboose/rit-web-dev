@@ -17,6 +17,9 @@
                 and insights into how to play the position effectively.
             </p>
 	    </div>
+        <div class="div_copy">
+            <p><a href="resources.php">Resources</a> for the curious</p>
+        </div>
     </div>
 </body>
 </html>

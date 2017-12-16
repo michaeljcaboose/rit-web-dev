@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div><p id="mouseover" onmouseover="changeColor('green')">Mouseover text</p></div>
+		<form action="" method="">
+			<div><label for="color">Put in a color name(or hex)</label><input name="color" type="text" oninput="changeStyle(this, 'color')"/></div>
+			<div><label for="font">Put in a font size</label><input name="font" type="text" onchange="changeStyle(this, 'fontSize')" /></div>
+			<div><label for="family">Put in a font family</label><input name="family" type="text"  onchange="changeStyle(this, 'fontFamily')"/></div>
+			<div><label for="left">Put in a new left</label><input name="left" type="text"  onchange="changeStyle(this, 'left')"/></div>
+			<div><label for="top">Put in a new top</label><input name="top" type="text"  onchange="changeStyle(this, 'top')"/></div>
+			<div><label for="background-color">Put in a new background</label><input name="background-color" type="text"  onchange="changeStyle(this, 'backgroundColor')"/></div>
+		</form>
+		<div id="sometext" style="position: relative;">Some text to control</div>
+		<script>
+			var elementToChange = document.getElementById('sometext');
+			
+			function changeStyle(inputField, rule){
+				elementToChange.style[rule] = inputField.value;
+				console.log(rule + ": " + inputField.value);
+			}
+			
+		</script>
+	</body>
+</html>

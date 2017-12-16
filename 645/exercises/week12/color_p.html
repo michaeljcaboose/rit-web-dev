@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<style type='text/css'>
+				.palette {
+					float: left;
+					height: 50px;
+					width: 100px;
+				}
+			</style>
+	</head>
+	<body>
+		<div id='palette-div' style='border:2px solid white; float:left;'>&nbsp;</div>
+		<div id='color-div' style='clear:both; position:relative; left:0;'>&nbsp;</div>
+		<script>
+			var colorArray = ['cyan', 'orange','blue', 'yellow', 'brown', 'red', 'black', 'green'];
+			var palette = [];
+			colorArray.forEach(function(color, index){
+				palette.push('<div class="palette" id="'+ colorArray[index] +'" style="background-color:'+ colorArray[index]+'" onclick="setBGColor(this)"></div>');
+			});
+			console.log(palette);
+			palette.forEach(function(colorDiv){
+				console.log(colorDiv);
+				document.getElementById('palette-div').innerHTML += colorDiv;
+			})
+			
+			var setBGColor = function(inDiv){
+				document.getElementById('color-div').style.backgroundColor = inDiv.style.backgroundColor;
+				document.getElementById('color-div').innerHTML = inDiv.style.backgroundColor;
+				currentLeft = parseInt(document.getElementById('color-div').style.left);
+				document.getElementById('color-div').style.left = (currentLeft + 10) + "px"; 
+			}
+		</script>
+	</body>
+</html>

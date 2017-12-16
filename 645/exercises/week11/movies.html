@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Movies</title>
+		<style type="text/css">
+			h1,h2{font-family:verdana,tahoma,sans-serif;}
+			body{margin-left:10px;margin-right:10px;background-color:#999;}
+			#content{background-color:#ddd;padding:3px 10px 3px 10px;
+			width:225px;
+			}
+			footer{display:block;color:gray;text-align:center;}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<h1>Movies!</h1>
+			<p>Welcome to my movie page!</p>
+			<h2>My favorites!</h2>
+			<ul>
+				<li>Adaptation</li>
+				<li>Birdemic</li>
+				<li>Care Bears</li>
+			</ul>
+			<p>
+				<a href="http://www.google.com">go to Google</a>	
+			</p>
+			<button id="redButton">Make red</button>
+			<button id="greenButton">Make green</button>
+			<button id="fontButton">Make italic</button>
+			<button id="toBing">Make Bing</button>
+			<footer>Copyright 2013 Nobody</footer>
+		</div>
+		<script>
+// 			alert("Modal alerts are so 80s");
+// 			console.log("Use console.log instead!");
+			function init(){
+				var myH1 = document.querySelector("h1");
+				myH1.innerHTML="FILMS!!!";
+				myH1.style.color="red";
+				myH1.style.backgroundColor="yellow";
+				
+				
+				var myFooter = document.querySelector("footer");
+				myFooter.innerHTML = "Matthew Panebianco";
+				
+				var redButton = document.getElementById('redButton');
+				redButton.onclick = makeRed;
+				
+				var greenButton = document.getElementById('greenButton');
+				greenButton.onclick = makeGreen;
+				
+				var fontButton = document.getElementById('fontButton');
+				fontButton.onclick = makeItalic;
+				
+				var bingButton = document.getElementById('toBing');
+				bingButton.onclick = toBing;
+			}
+			
+			function makeRed(){
+				document.querySelector("body").style.backgroundColor = "red";
+			}
+			function makeGreen(){
+				document.querySelector("body").style.backgroundColor = "green";
+			}
+			
+			function makeItalic(){
+				document.querySelector("h1").style.fontStyle = "italic";
+				document.querySelector("h2").style.fontStyle = "italic";
+			}
+			
+			function toBing(){
+				document.querySelector("a").setAttribute("href", "https://www.bing.com");
+			}
+			
+			// not required since script is at the body of the body
+			// only required when script is loaded in HEAD
+			// P.S. using () calls funciton immediately 
+			window.onload = init;
+		</script>
+	</body>
+</html>

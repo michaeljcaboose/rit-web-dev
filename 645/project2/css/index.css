@@ -223,7 +223,15 @@ h2, h3{
 #gear{
 	background-image: url('../media/hockey-goalie-gear.jpg');
 }
-	
+
+#stretch{
+	background-image: url('../media/stretch.jpg');
+}
+
+#strategy{
+	background-image: url('../media/strategy.jpg');
+}
+
 /* GENERAL IMAGES*/
 
 img{
@@ -263,6 +271,10 @@ figcaption{
 	background-color: rgba(255,255,255,1);
 	padding: 15px 5.2%;
 	
+}
+
+.div_top-space{
+	padding: 15px 0px;
 }
 
 .div_copy p{

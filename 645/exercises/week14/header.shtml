@@ -1,0 +1,4 @@
+
+<p><!--#echo var="DATE_LOCAL"--></p>
+<p><!--#echo var="REMOTE_ADDR"--></p>
+<p><!--#echo var="SERVER_ADDR"--></p>

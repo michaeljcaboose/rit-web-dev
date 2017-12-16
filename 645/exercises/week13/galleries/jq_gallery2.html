@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+  <title>Image Gallery</title>
+   <link rel="stylesheet" href="styles/layout.css" type="text/css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="js/jquery.flippy.min.js"></script>
+   <script>
+       'use strict';
+       var index = 0;
+       var captions = ["A fireworks display","A cup of black coffee","A red, red rose","The famous clock"];
+       var images = ["images/fireworks.jpg","images/coffee.jpg","images/rose.jpg", "images/bigben.jpg"];
+       $(document).ready(function(){
+        $("#flipbox1").flippy({
+            verso: 'fireworks',
+            depth: 1
+        });
+
+        $("#flipbox2").flippy({
+            verso: 'concept',
+            depth: 1
+        });
+
+        $("#next").on("click", function(e){
+            index++;
+
+            if(index >= images.length){
+                index = 0;
+            }
+
+            showImage();
+        });
+        $("#previous").on("click", function(e){
+            index--;
+
+            if(index < 0){
+                index = images.length;
+            }
+
+            showImage();
+        })
+       });
+
+       function showImage(){
+           var img = document.createElement("img");
+           var caption = captions[index];
+           img.src = images[index];
+           img.setAttribute("alt", caption);
+
+           img.onload = function(){
+               $("#description").text(caption);
+
+               $("#flipbox1").flippy({
+                   verso: img,
+                   depth: 1
+               });
+            //    $("#flipbox2").flippy({
+            //        verso: img,
+            //        depth: 1
+            //    });
+           }
+       }
+   </script>
+   <style>
+   		a:hover{
+   			opacity: 0.5;
+   			transition-property: opacity;
+   			transition-duration: 0.25s;
+   		}
+   		
+   		#controls{
+   			width:400px;
+   			margin-bottom: 0.5em;
+   		}
+   		
+   		#next{
+   			float:right;
+   		}
+        
+        .flipbox {
+          background-color: #28b9df;
+          width: 400px;
+          height: 300px;
+          margin-bottom: 15px;
+        }
+        
+        #flipbox2 {
+            cursor: pointer;
+        }
+        
+        #flipbox2 p {
+            text-align: center;
+            padding-top: 140px;
+            font-size: 1.3em;
+        }
+        
+   </style>
+</head>
+<body>
+    <section id="main">
+      <h1>Snapshots</h1>
+      <div id="controls">
+        <a href="#" id="previous" title="Previous Image">Previous</a>
+        <a href="#" id="next" title="Next Image">Next</a>
+      </div>
+      <div class="container">
+        <div class="flipbox-container box100">
+            <div id="flipbox1" class="flipbox">
+            </div>
+        </div>
+        <p id="description">A fireworks display</p>
+        <footer>
+            <p>Credit: Images and layout from: <a href="http://domscripting.com/book/">http://domscripting.com/book/</a></p>
+         </footer>
+        
+        <div class="flipbox-container box100">
+            <div id="flipbox2" class="flipbox">
+            </div>
+        </div>
+      </div>
+
+    </section>
+</body>
+</html>

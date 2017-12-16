@@ -54,18 +54,32 @@
 						<li><a href="exercises/week6/page1.html">Week 6</a></li>
 						<li><a href="project1/index.php">Portfolio / Project 1</a></li>
 						<li><a href="exercises/photoshop/index.php">Photoshop photos</a> </li>
+						<li><a href="exercises/week11/movies.html">Week 11 movies</a></li>
+						<li><a href="exercises/week11/hp_calculator_start.html">Week 11 Harry Potter</a></li>
+						<li><a href="exercises/week11/simple_calculator_start.html">Week 11 Simple Calc</a></li>
+						<li><a href="exercises/week12/dhtml.html">dhtml</a></li>
+						<li><a href="exercises/week12/color_p.html">color palette</a></li>
+						<li><a href="project2/index.php">Project 2</a></li>
+						<li><a href="exercises/week13/multipage_site/">Week 13 Multi Site</a></li>
+						<li><a href="exercises/week13/simple_lightbox/lightbox.html">Week 13 Lightbox</a></li>
+						<li><a href="exercises/week13/simple_JS_element_creation/create.html">Week 13 Element Creation</a></li>
+						<li><a href="exercises/week13/galleries/jq_gallery1.html">Week 13 Gallery 1</a></li>
+						<li><a href="exercises/week13/galleries/jq_gallery2.html">Week 13 Gallery 2</a></li>
+
+						
 			    	</ul>
 			    </div><!-- Card -->
 
 		    </div>
 		    <footer>
 				<div><a href="https://people.rit.edu/~jrhicsa/645/645-01.shtml">Class List</a></div>
-				<div>Copyright 2017 Matthew Panebebianco</div>
+				<div>Copyright 2017 Matthew Panebianco</div>
 				<div>All rights reserved</div>
 			</footer>
 	    </div>
+	    <!--#include file="exercises/week14/SSI_startup.shtml"-->
     </div>
-
+	
 </body>
 </html>
 
